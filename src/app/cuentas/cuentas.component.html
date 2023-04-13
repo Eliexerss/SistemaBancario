@@ -1,0 +1,34 @@
+<div class="d-flex flex-row bd-highlight mb-9">
+    <div class="p-2 w-100 bd-highlight">
+  
+      <div class="input-group mb-12">
+        <span class="input-group-text">Numero de Cuenta</span>
+        <input type="text" class="form-control" [(ngModel)]="NumeroCuenta">
+      </div>
+    </div>
+</div>
+  <button (click)="ConsultarNumeroCuenta()" class="btn btn-primary">
+    Consultar Cuenta
+  </button>
+  <div class="p-2 w-100 bd-highlight">
+    <div class="d-flex flex-row bd-highlight mb-9">
+    <div class="input-group mb-12">
+      <span class="input-group-text">Monto a Retirar</span>
+      <input type="text" class="form-control" [(ngModel)]="MontoRetiro">
+    </div>
+  </div>
+</div>
+<button (click)="RetirarMonto()" class="btn btn-primary">
+  Retirar de la Cuenta
+</button>
+<div class="p-2 w-100 bd-highlight">
+    <div class="d-flex flex-row bd-highlight mb-9">
+  <div class="input-group mb-12">
+    <span class="input-group-text">Monto a depositar</span>
+    <input type="text" class="form-control" [(ngModel)]="MontoDeposito">
+  </div>
+</div>
+</div>
+<button (click)="DepositarMonto()" class="btn btn-primary">
+Depositar en la Cuenta
+</button>
